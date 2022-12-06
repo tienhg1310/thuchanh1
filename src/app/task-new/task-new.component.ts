@@ -1,25 +1,25 @@
-// import { Component , OnInit } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 
-// import { FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
-// @Component({
-//   selector: 'app-task-new',
-//   templateUrl: './task-new.component.html',
-//   styleUrls: ['./task-new.component.css']
-// })
+@Component({
+  selector: 'app-task-new',
+  templateUrl: './task-new.component.html',
+  styleUrls: ['./task-new.component.css']
+})
 
-// export class TaskNewComponent implements OnInit {
-//   newForm = this.fb.group({
-//     title: [''],
-//     content: ['']
-//   })
-//   constructor(private fb: FormBuilder) { }
+export class TaskNewComponent implements OnInit {
+  newForm = this.fb.group({
+    title: [''],
+    content: ['']
+  })
+  constructor(private fb: FormBuilder) { }
 
-//   ngOnInit() {
+  ngOnInit() {
 
-//   }
-//   onSubmit() {
-//     console.log(this.newForm.value);
-//     }
+  }
+  onSubmit() {
+    console.log(this.newForm.value);
+    }
 
-// }
+}
