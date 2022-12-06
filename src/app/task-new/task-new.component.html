@@ -1,0 +1,14 @@
+<h1>Thêm mới công việc</h1>
+<form [formGroup]="newForm" (ngSubmit)="onSubmit()">
+  <div>
+    <div>Tiêu đề</div>
+    <div><input type="text" formControlName="title" /></div>
+  </div>
+  <div>
+    <div>Nội dung</div>
+    <div><textarea formControlName="content"></textarea></div>
+  </div>
+  <div>
+    <div><button [routerLink]="['/list']">Hủy</button><button type="submit">Lưu</button></div>
+  </div>
+</form>
